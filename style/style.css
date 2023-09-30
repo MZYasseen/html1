@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: #1e335f;
+    padding: 10px 0 20px;
+}
+
+.first-page{
+    background-color: #3B5998;
+    min-height: 100vh;
+    
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+.fa:hover {
+    opacity: 0.7;
+  }  
+
+.fa-facebook {
+    background:  white;
+    color:  #3B5998;
+  }
+
+.fa-twitter {
+    background:  white;
+    color:  #3B5998;
+  }
+
+.fa-linkedin {
+    background: white;
+    color:  #3B5998;
+  }
+  
+/* header start*/
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 130px;
+}
+
+.navbar .logo-pic{
+    width: 80px;
+    border: 3px solid white;
+    border-radius: 80%;
+    background-color: #FFDE00;
+    cursor: pointer;
+    }
+    
+.navbar .logo-name{
+    color: white;
+    cursor: pointer;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    width: 20%;
+    margin-left: 80px;
+}
+
+.navbar ul li{
+    margin-left: 20px;
+}
+
+.navbar ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.navbar ul li a:hover{
+    border-bottom: 2px solid #FFDE00;
+}
+
+.navbar ul li a:active{
+    color:   #a59005;
+    border-bottom: 2px solid #a59005;
+}
+
+.navbar .cart{
+    width: 40px;
+    cursor: pointer;
+    padding: 6px;
+    background-color: #FFDE00;
+    border-radius: 80%;
+}
+
+.navbar .cart:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.navbar .cart:active{
+    background-color: rgb(129, 129, 43);
+   }
+
+.navbar button{
+    width: fit-content;
+    background-color: #FFDE00;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border-style: none;
+}
+
+.navbar button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.navbar button:active{
+    background-color: rgb(129, 129, 43);
+   }
+/* header end*/
+/* Hero start*/
+.hero-area{
+    display: flex;
+}
+
+.hero-content{
+    margin-left: 200px;
+    color: white;
+    
+}
+
+.hero-title span{
+    color: #FFDE00;
+    font-size: 30px;
+}
+
+.hero-title p i{
+    font-weight: 200;
+}
+
+.hero-title{
+    font-size: larger;
+}
+
+.title-desciption{
+    font-weight: 300;
+}
+
+.hero-img{
+    margin-right: 200px;
+    
+}
+
+.hero-img img{
+    width: 480px;
+    height: 600px;
+    background-size: cover; 
+    padding-bottom: 20px;
+}
+
+.order-or-read{
+    display: flex;
+    align-items: center;
+}
+
+.order-or-read button{
+    background-color: #FFDE00;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #1b3264;
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-right: 50px;   
+    border-style: none;
+}
+
+.order-or-read button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.order-or-read button:active{
+ background-color: rgb(129, 129, 43);
+}
+
+.order-or-read h3:hover{
+    opacity: 0.7;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+.book-details{
+    display: flex;
+    justify-content: space-around;
+}
+
+.book-details p{
+    display: list-item;
+    list-style-position: outside;
+}
+/* hero end*/
+
+/* first page end*/
+
+/* second page start*/
+.second-page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 200px;
+    background-color: #eee;
+}
+
+
+.second-page h2{
+    color: #3B5998;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.learning-outcomes{
+    display: flex;
+
+   
+}
+
+.learning-outcomes .outcomes-content{
+    display: grid;
+     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "first second" "third forth";
+    justify-content: space-around;
+    gap: 20px 0;
+}
+
+.outcomes-content .outcomes-one{
+    grid-area: first;
+    background-color: #e0e0e0;
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.outcomes-content .outcomes-two{
+    grid-area: second;
+    background-color: #e0e0e0;
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.outcomes-content .outcomes-three{
+    grid-area: third;
+    background-color: #e0e0e0;
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.outcomes-content .outcomes-four{
+    grid-area: forth;
+    background-color: #e0e0e0;
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.outcomes-image img{
+    width: 300px;
+    height: 400px;
+    background-size: cover; 
+    border-radius: 5px;
+}
+
+.outcomes-content .number{
+    background-color: #FFDE00;
+    width:  63px;
+    height: 63px;
+    text-align: center;
+    padding: 20px;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+/* second page end*/
+/* third page start*/
+.third-page{
+    min-height: 100vh;
+    background-color: #d1d0d0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 200px;
+}
+
+.third-page .chapters-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    gap: 20px;
+    
+}
+
+.third-page .chapters-title h2{
+    color: #3B5998;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.chapters-content div{
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    
+
+}
+
+.chapters-content div h4{
+    color: #2f5099;
+    font-weight: 600;
+    
+}
+
+.chapters-content div h5{
+    color: #2f5099;
+    font-weight: 600;
+    
+}
+
+.chapters-content div span, .chapters-content p{
+    font-weight: 400;
+    color: gray;
+    margin: 7px;
+}
+
+.order-book button{
+    background-color: #FFDE00;
+    color: #2c4e99;
+    font-size: 17px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-right: 50px;   
+    border-style: none;
+}
+
+.order-book-details{
+    margin: 20px auto;
+    
+    text-align: center;
+}
+
+.order-book button:hover{
+    background-color: rgb(185, 185, 61);
+    cursor: pointer;
+}
+
+.order-book button:active{
+ background-color: rgb(129, 129, 43);
+}
+
+.order-book p, .order-book span{
+    font-weight: 400;
+    color: gray;
+   
+}
+
+.order-book a{
+    text-decoration: none;
+    color:#2c4e99;
+}
+
+/* third page end*/
+/* forth page start*/
+.forth-page{
+        min-height: 100vh;
+        padding: 50px 200px;
+        background-color: #eee;
+    
+}
+
+.forth-page h2{
+        text-align: center;
+        color: #3B5998;
+        font-weight: 500;
+        font-size: 40px;
+        margin-bottom: 50px;
+}
+
+.articles-to-read{
+display: flex;
+justify-content: space-evenly;
+}
+
+.articles-to-read div{
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #e6e5e5;
+    border-radius: 5px;
+}
+
+.articles-to-read div:hover{
+  background-color: #cecccc;
+}
+
+.articles-to-read div h4{
+color: #2c4e99;
+
+}
+
+.articles-to-read div p{
+    color: #a1a1a1;
+}
+
+.articles-to-read div a{
+color: #2c4e99;
+margin-right: 130px;
+}
+
+.articles-to-read img{
+    width: 350px;    
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: #2c4e99;
+    padding: 20px;
+}
+
+/* forth page end*/
